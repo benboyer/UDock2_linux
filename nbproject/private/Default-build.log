@@ -1,0 +1,5 @@
+Scanning dependencies of target mmv
+[ 50%] Building CXX object CMakeFiles/mmv.dir/src/main.cpp.o
+[100%] Building C object CMakeFiles/mmv.dir/src/gl3w.c.o
+Linking CXX executable mmv
+[100%] Built target mmv

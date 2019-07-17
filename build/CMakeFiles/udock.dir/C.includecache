@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/gl3w.h
+glcorearb.h
+-
+
+../include/glcorearb.h
+windows.h
+-
+stddef.h
+-
+inttypes.h
+-
+inttypes.h
+-
+inttypes.h
+-
+stdint.h
+-
+stdint.h
+-
+inttypes.h
+-
+
+/home/bboyer/Desktop/miniMolViewer-release/src/gl3w.c
+gl3w.h
+-
+windows.h
+-
+Carbon/Carbon.h
+-
+dlfcn.h
+-
+GL/glx.h
+-
+
