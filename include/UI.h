@@ -14,6 +14,50 @@
 
 #include "scene_data.h"
 
+unsigned int getTexColorBuffer(int window_width,int window_height){
+    // generate texture
+    unsigned int texColorBuffer;
+    glGenTextures(1, &texColorBuffer);
+    glBindTexture(GL_TEXTURE_2D, texColorBuffer);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB,  window_width, window_height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR );
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glBindTexture(GL_TEXTURE_2D, 0);
+    return texColorBuffer;
+}
+
+unsigned int getTexDepthBuffer(int window_width,int window_height){
+    //generate frame buffer for depth
+    unsigned int texDepthBuffer;
+    glGenTextures(1, &texDepthBuffer);
+    glBindTexture(GL_TEXTURE_2D, texDepthBuffer);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT24, window_width, window_height, 0, GL_DEPTH_COMPONENT, GL_FLOAT, NULL);
+    return texDepthBuffer;
+}
+unsigned int getScreenFramebuffer(unsigned int texColorBuffer,unsigned int texDepthBuffer){
+
+    unsigned int framebuffer;
+    glGenFramebuffers(1, &framebuffer);
+    glBindFramebuffer(GL_FRAMEBUFFER, framebuffer); 
+    
+    // attach texture to currently bound framebuffer object
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texColorBuffer, 0);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, texDepthBuffer, 0);
+
+    //check if the frame buffer is complete (correct)
+    if(glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
+        std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
+    //unbind it to avoid mistake
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    return framebuffer;
+}
+
 void scorePlot( float energy, int screen_width,int screen_height){
 
         		//energy bar
@@ -52,6 +96,50 @@ void scorePlot( float energy, int screen_width,int screen_height){
 
 
 
+void changeResolution (SDL_Window* window,scene_docking_data& docking_data, int w, int h){
+  // std::cout <<"screen_resolution "<< item << std::endl;
+
+                    int old_h,old_w;
+                    SDL_GetWindowSize(window,&old_h,&old_w);
+                    if (h!=old_h || w != old_w){
+
+                        // SDL_DestroyWindow(window);
+                        // window =  SDL_CreateWindow("Minimal Molecule Viewer", 100, 100, h, w, SDL_WINDOW_OPENGL );//recreate windows with new dimension
+                        // SDL_GL_MakeCurrent(window,docking_data.context);
+                        SDL_SetWindowSize(window,w, h);
+
+                        // SDL_GetWindowSize(window,&h, &w);
+                        glViewport(0,0,w,h);
+                        docking_data.d_cam->screen_width = w;//camera for the docking scene
+                        docking_data.d_cam->screen_height = h;
+                        docking_data.ss_cam->screen_width = w;//camera for the spaceship scene
+                        docking_data.ss_cam->screen_height = h;
+                        //suposedly prevent bug if relative mouse mode activated, shouldn't be a problem at the moment but I'm sure it come up eventually(always do)
+                        if (SDL_GetRelativeMouseMode())
+                        {
+                            SDL_SetRelativeMouseMode(SDL_FALSE);
+                            SDL_SetRelativeMouseMode(SDL_TRUE);
+                        }
+                        // glDeleteBuffers(1,&docking_data.framebuffer);
+                        glDeleteTextures(1,&docking_data.texColorBuffer);
+                        glDeleteTextures(1,&docking_data.texDepthBuffer);
+                        glDeleteFramebuffers(1,&docking_data.framebuffer);
+                        // glDeleteFramebuffers(1,&docking_data.texColorBuffer);
+                        // glDeleteFramebuffers(1,&docking_data.texDepthBuffer);
+                        // unsigned int tcbuff =getTexColorBuffer(w,h);
+                        // docking_data.texColorBuffer= &tcbuff;
+                        // unsigned int tdbuff= getTexDepthBuffer(w,h);
+                        // docking_data.texDepthBuffer= &tdbuff;
+                        // unsigned int scFbuff = getScreenFramebuffer(tcbuff,tdbuff);
+                        // docking_data.framebuffer = &scFbuff;
+
+                        docking_data.texColorBuffer=getTexColorBuffer(w,h);
+                        docking_data.texDepthBuffer=getTexDepthBuffer(w,h);
+                        docking_data.framebuffer = getScreenFramebuffer(docking_data.texColorBuffer,docking_data.texDepthBuffer);
+                        docking_data.resizeWindows = true;
+                      }
+}
+
 void optionWindow (SDL_Window* window,scene_docking_data& docking_data,bool* open){
 			int width = docking_data.d_cam->screen_width;
     		int height = docking_data.d_cam->screen_height;
@@ -61,78 +149,16 @@ void optionWindow (SDL_Window* window,scene_docking_data& docking_data,bool* ope
             {
 		        ImGui::End();
 		    }else{
-
-          //       static int item = 1;
-          //       ImGui::Combo("screen resolution", &item, "aaaa\0bbbb\0cccc\0dddd\0eeee\0\0");
-	        	// // std::cout <<"screen_resolution "<< item << std::endl;
-          //       if(item == 0){
-          //           std::cout <<"screen_resolution "<< item << std::endl;
-
-          //           int h,w;
-          //           h= 1280;
-          //           w= 960;
-
-          //           int old_h,old_w;
-          //           SDL_GetWindowSize(window,&old_h,&old_w);
-          //           if (h!=old_h || w != old_w){
-
-          //               // SDL_DestroyWindow(window);
-          //               // window =  SDL_CreateWindow("Minimal Molecule Viewer", 100, 100, h, w, SDL_WINDOW_OPENGL );//recreate windows with new dimension
-          //               // SDL_GL_MakeCurrent(window,docking_data.context);
-          //               SDL_SetWindowSize(window,h, w);
-
-          //               // SDL_GetWindowSize(window,&h, &w);
-          //               glViewport(0,0,h,w);
-          //               docking_data.d_cam->screen_width = h;//camera for the docking scene
-          //               docking_data.d_cam->screen_height = w;
-          //               docking_data.ss_cam->screen_width = h;//camera for the spaceship scene
-          //               docking_data.ss_cam->screen_height = w;
-          //               //suposedly prevent bug if relative mouse mode activated, shouldn't be a problem at the moment but I'm sure it come up eventually(always do)
-          //               if (SDL_GetRelativeMouseMode())
-          //               {
-          //                   SDL_SetRelativeMouseMode(SDL_FALSE);
-          //                   SDL_SetRelativeMouseMode(SDL_TRUE);
-          //               }
-          //           }
-
-          //       }
-
-          //       if(item == 1){
-
-          //                           // std::cout <<"screen_resolution "<< item << std::endl;
-
-          //           int h,w;
-          //           h= 1024;
-          //           w=768;
-          //           // h = 1920;
-          //           // w= 1080;
-          //           int old_h,old_w;
-          //           SDL_GetWindowSize(window,&old_h,&old_w);
-          //           if (h!=old_h || w != old_w){
-                                            
-          //               // SDL_DestroyWindow(window);
-          //               // window =  SDL_CreateWindow("Minimal Molecule Viewer", 100, 100, h, w, SDL_WINDOW_OPENGL );//recreate windows with new dimension
-          //               // SDL_GL_MakeCurrent(window,docking_data.context);
-          //               SDL_SetWindowSize(window,h, w);
-
-
-          //               // SDL_GetWindowSize(window,&h, &w);
-          //               glViewport(0,0,h,w);
-
-          //               // std::cout <<"h " <<h << " w "<< w<< item << std::endl;
-
-          //               docking_data.d_cam->screen_width = h;//camera for the docking scene
-          //               docking_data.d_cam->screen_height = w;
-          //               docking_data.ss_cam->screen_width = h;//camera for the spaceship scene
-          //               docking_data.ss_cam->screen_height = w;
-          //               //suposedly prevent bug if relative mouse mode activated, shouldn't be a problem at the moment but I'm sure it come up eventually(always do)
-          //               if (SDL_GetRelativeMouseMode())
-          //               {
-          //                   SDL_SetRelativeMouseMode(SDL_FALSE);
-          //                   SDL_SetRelativeMouseMode(SDL_TRUE);
-          //               }
-          //           }
-          //       }
+                static int item = 1;
+                ImGui::Combo("screen resolution", &item, " 1024x768\0 1280x960\0 1920x1080(hd 1080)\0 2048x1080(2K)\0 4096x2160(4k)\0 3840x2160(UHD-1)\0\0");
+            // std::cout <<"screen_resolution "<< item << std::endl;
+                if(item == 0){changeResolution (window,docking_data,1024,768);}
+                if(item == 1){changeResolution (window,docking_data,1280,960);}
+                if(item == 2){changeResolution (window,docking_data,1920,1080);}
+                if(item == 3){changeResolution (window,docking_data,2048,1080);}
+                if(item == 4){changeResolution (window,docking_data,4096,2160);}
+                if(item == 5){changeResolution (window,docking_data,3840,2160);}
+         
                 ImGui::Checkbox("skybox", docking_data.showSkybox);//already a pointer
                 ImGui::ColorEdit3("background color", (float*)docking_data.bgColor);
                 ImGui::Checkbox("invert Y axis", docking_data.invertedAxis);//already a pointer

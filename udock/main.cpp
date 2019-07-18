@@ -153,50 +153,6 @@
 
 
 
-unsigned int getTexColorBuffer(int window_width,int window_height){
-    // generate texture
-    unsigned int texColorBuffer;
-    glGenTextures(1, &texColorBuffer);
-    glBindTexture(GL_TEXTURE_2D, texColorBuffer);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB,  window_width, window_height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR );
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glBindTexture(GL_TEXTURE_2D, 0);
-    return texColorBuffer;
-}
-
-unsigned int getTexDepthBuffer(int window_width,int window_height){
-    //generate frame buffer for depth
-    unsigned int texDepthBuffer;
-    glGenTextures(1, &texDepthBuffer);
-    glBindTexture(GL_TEXTURE_2D, texDepthBuffer);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_DEPTH_COMPONENT24, window_width, window_height, 0, GL_DEPTH_COMPONENT, GL_FLOAT, NULL);
-    return texDepthBuffer;
-}
-unsigned int getScreenFramebuffer(unsigned int texColorBuffer,unsigned int texDepthBuffer){
-
-    unsigned int framebuffer;
-    glGenFramebuffers(1, &framebuffer);
-    glBindFramebuffer(GL_FRAMEBUFFER, framebuffer); 
-    
-    // attach texture to currently bound framebuffer object
-    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, texColorBuffer, 0);
-    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, texDepthBuffer, 0);
-
-    //check if the frame buffer is complete (correct)
-    if(glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
-        std::cout << "ERROR::FRAMEBUFFER:: Framebuffer is not complete!" << std::endl;
-    //unbind it to avoid mistake
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    return framebuffer;
-}
-
 GLuint loadImage (std::string filename){
 
     //load image 
@@ -751,6 +707,7 @@ int main(int argc, char* argv[])
     spaceship_data.texDepthBuffer= getTexDepthBuffer(window_width, window_height);
     spaceship_data.framebuffer = getScreenFramebuffer(spaceship_data.texColorBuffer,spaceship_data.texDepthBuffer);
 
+    docking_data.resizeWindows = false;
     //shader to render the framebuffer on the screen quad
     Shader screenQuadShader = basicShader("../shaders/screen.vertex.glsl","../shaders/screen.fragment.glsl");
 
@@ -900,6 +857,13 @@ int main(int argc, char* argv[])
     spaceship_data.viewMode = firstPerson;
     while (current_scene != END)
     {
+        //used for changing resolution
+        if (docking_data.resizeWindows){
+            spaceship_data.texColorBuffer = docking_data.texColorBuffer;
+            spaceship_data.texDepthBuffer = docking_data.texDepthBuffer;
+            spaceship_data.framebuffer = docking_data.framebuffer;
+            docking_data.resizeWindows = false;
+        }
         SDL_SetRelativeMouseMode(relativeMouseMode);
         switch(current_scene)
         {
