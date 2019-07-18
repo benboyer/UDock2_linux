@@ -57,7 +57,7 @@ public:
         int size = atoms.size();
         for (int i = 0; i < size; i++)
         {
-            radius = max(radius,  glm::length(atoms[i].pos - barycenter));
+            radius = glm::max(radius,  glm::length(atoms[i].pos - barycenter));
         } 
     }
 
