@@ -1,0 +1,972 @@
+The following ports are currently installed:
+  aspell @0.60.6.1_1 (active)
+  assimp @4.1.0_0 (active)
+  atk @2.28.1_0 (active)
+  atkmm @2.24.2_0
+  atkmm @2.28.0_0 (active)
+  autoconf @2.69_5 (active)
+  autoconf-archive @2018.03.13_0
+  autoconf-archive @2019.01.06_0 (active)
+  automake @1.16.1_0
+  automake @1.16.1_1 (active)
+  boehmgc @7.6.8_0
+  boehmgc @8.0.2_1
+  boehmgc @8.0.4_1 (active)
+  boost @1.66.0_3+no_single+no_static+python27
+  boost @1.66.0_3+no_single+no_static+python37
+  boost @1.66.0_4+no_single+no_static+python37 (active)
+  bullet @2.87_0 (active)
+  bzip2 @1.0.6_0
+  bzip2 @1.0.7_0 (active)
+  cairo @1.14.12_0+quartz+x11
+  cairo @1.16.0_0+quartz+x11 (active)
+  cairomm @1.12.2_0+x11 (active)
+  cctools @895_7+xcode
+  cctools @921_1+xcode
+  cctools @921_2+xcode (active)
+  cgal @4.12_0
+  cgal @4.13_0 (active)
+  clang-6.0 @6.0.1_0+analyzer+libstdcxx
+  clang-6.0 @6.0.1_2+analyzer+libstdcxx (active)
+  clang-7.0 @7.0.0_0+analyzer+libstdcxx
+  clang-7.0 @7.0.1_0+analyzer+libstdcxx
+  clang-7.0 @7.0.1_1+analyzer+libstdcxx (active)
+  clang-8.0 @8.0.0_0+analyzer+libstdcxx (active)
+  clang_select @2_0 (active)
+  cmake @3.12.1_0
+  cmake @3.12.2_0
+  cmake @3.12.3_0
+  cmake @3.13.4_0
+  cmake @3.14.1_0
+  cmake @3.14.4_0
+  cmake @3.14.5_0 (active)
+  cppunit @1.14.0_0 (active)
+  cython_select @0.1_0
+  cython_select @0.1_1 (active)
+  db48 @4.8.30_4 (active)
+  dbus @1.12.10_0
+  dbus @1.12.12_0
+  dbus @1.12.16_0 (active)
+  dbus-glib @0.110_0 (active)
+  dbus-python27 @1.2.8_0 (active)
+  desktop-file-utils @0.23_0 (active)
+  djvulibre @3.5.27_0 (active)
+  eigen3 @3.3.5_0
+  eigen3 @3.3.5_1
+  eigen3 @3.3.7_0 (active)
+  enchant @1.6.0_5+applespell (active)
+  expat @2.2.6_1
+  expat @2.2.7_0 (active)
+  fftw-3 @3.3.8_0 (active)
+  fontconfig @2.13.1_0 (active)
+  freeglut @3.0.0_0 (active)
+  freetype @2.9.1_0
+  freetype @2.10.0_0 (active)
+  fribidi @0.19.7_1
+  fribidi @1.0.5_0 (active)
+  g95 @0.93_5 (active)
+  gcc7 @7.3.0_3
+  gcc7 @7.3.0_5
+  gcc7 @7.4.0_0
+  gcc7 @7.4.0_3 (active)
+  gcc8 @8.2.0_3
+  gcc8 @8.3.0_0
+  gcc8 @8.3.0_4 (active)
+  gcc_select @0.1_8 (active)
+  gdbm @1.16_0
+  gdbm @1.18.1_1 (active)
+  gdk-pixbuf2 @2.36.12_0+x11 (active)
+  gettext @0.19.8.1_0
+  gettext @0.19.8.1_2 (active)
+  giflib @4.2.3_0+x11 (active)
+  git @2.18.0_0+credential_osxkeychain+doc+pcre+perl5_26
+  git @2.19.0_0+credential_osxkeychain+doc+pcre+perl5_26
+  git @2.19.1_0+credential_osxkeychain+doc+pcre+perl5_26
+  git @2.20.1_1+credential_osxkeychain+diff_highlight+doc+pcre+perl5_26
+  git @2.20.1_2+credential_osxkeychain+diff_highlight+doc+pcre+perl5_26
+  git @2.21.0_2+credential_osxkeychain+diff_highlight+doc+pcre+perl5_26
+  git @2.22.0_0+credential_osxkeychain+diff_highlight+doc+pcre+perl5_26 (active)
+  glew @2.1.0_0 (active)
+  glfw @3.2.1_0+docs
+  glfw @3.3_0+docs (active)
+  glib2 @2.56.2_0+x11
+  glib2 @2.58.1_0+x11
+  glib2 @2.58.3_0+x11 (active)
+  glibmm @2.56.0_1+x11
+  glibmm @2.58.0_0+x11 (active)
+  glm @0.9.9.0_0
+  glm @0.9.9.3_0
+  glm @0.9.9.4_0
+  glm @0.9.9.5_0 (active)
+  gmp @6.1.2_1 (active)
+  gnome-common @3.18.0_0 (active)
+  gobject-introspection @1.56.1_1
+  gobject-introspection @1.58.0_0
+  gobject-introspection @1.58.3_0
+  gobject-introspection @1.58.3_1 (active)
+  graphite2 @1.3.9_0
+  graphite2 @1.3.12_0
+  graphite2 @1.3.13_0 (active)
+  gsl @2.5_0
+  gsl @2.5_1 (active)
+  gtest @1.8.0_1
+  gtest @1.8.1_0 (active)
+  gtk2 @2.24.32_0+x11 (active)
+  gtkmm @2.24.5_1+x11
+  gtkmm @2.24.5_2+x11 (active)
+  gtkspell2 @2.0.16_7+x11 (active)
+  harfbuzz @1.8.8_0
+  harfbuzz @1.9.0_0
+  harfbuzz @2.3.0_0
+  harfbuzz @2.3.1_0
+  harfbuzz @2.5.3_0 (active)
+  hicolor-icon-theme @0.17_0 (active)
+  hwloc @1.11.8_0 (active)
+  icu @58.2_2 (active)
+  ilmbase @2.2.1_0
+  ilmbase @2.3.0_1 (active)
+  ImageMagick @6.9.9-40_2+x11
+  ImageMagick @6.9.9-40_3+x11
+  ImageMagick @6.9.9-40_5+x11
+  ImageMagick @6.9.9-40_6+x11 (active)
+  inetutils @1.9.4_10+client
+  inetutils @1.9.4_11+client (active)
+  intltool @0.51.0_4
+  intltool @0.51.0_5 (active)
+  ipython3_select @0.1_0 (active)
+  ipython_select @0.4_0 (active)
+  isl @0.18_0
+  isl @0.20_0
+  isl @0.21_0 (active)
+  jasper @2.0.14_0 (active)
+  jbig2dec @0.14_0
+  jbig2dec @0.15_0
+  jbig2dec @0.16_0 (active)
+  jbigkit @2.1_0 (active)
+  jpeg @9c_0 (active)
+  json-c @0.13-20171207_1 (active)
+  kerberos5 @1.16.1_0
+  kerberos5 @1.17_0 (active)
+  lcms2 @2.9_1 (active)
+  ld64 @3_1+ld64_xcode (active)
+  ld64-xcode @2_1 (active)
+  libarchive @3.3.2_1
+  libarchive @3.3.3_0
+  libarchive @3.3.3_1 (active)
+  libcdr-0.1 @0.1.4_2
+  libcdr-0.1 @0.1.5_0 (active)
+  libcomerr @1.44.3_0
+  libcomerr @1.44.4_0
+  libcomerr @1.44.5_0 (active)
+  libcxx @5.0.1_2+universal
+  libcxx @5.0.1_4 (active)
+  libedit @20170329-3.1_2
+  libedit @20181209-3.1_0
+  libedit @20190324-3.1_0 (active)
+  libexif @0.6.21_0 (active)
+  libffi @3.2.1_0 (active)
+  libgcc @1.0_0
+  libgcc @2.0_1 (active)
+  libgcc7 @7.3.0_2
+  libgcc7 @7.3.0_3
+  libgcc7 @7.4.0_0
+  libgcc7 @7.4.0_3 (active)
+  libgcc8 @8.2.0_0
+  libgcc8 @8.2.0_1
+  libgcc8 @8.2.0_2
+  libgcc8 @8.3.0_0
+  libgcc8 @8.3.0_5 (active)
+  libgcc9 @9.1.0_1
+  libgcc9 @9.1.0_2 (active)
+  libGLU @9.0.0_0 (active)
+  libiconv @1.15_0
+  libiconv @1.16_0 (active)
+  libidn @1.35_0 (active)
+  libidn2 @2.0.5_0
+  libidn2 @2.1.0_0
+  libidn2 @2.1.1_0
+  libidn2 @2.2.0_0 (active)
+  libmng @2.0.3_0 (active)
+  libmpc @1.1.0_1 (active)
+  libomp @6.0.1_0+universal
+  libomp @7.0.0_0+universal
+  libomp @7.0.1_0+universal
+  libomp @8.0.0_0+universal (active)
+  libpaper @1.1.24.5_0 (active)
+  libpixman @0.34.0_0
+  libpixman @0.36.0_0
+  libpixman @0.38.0_0
+  libpixman @0.38.4_0 (active)
+  libpng @1.6.35_0
+  libpng @1.6.36_0
+  libpng @1.6.37_0 (active)
+  libpsl @0.20.2-20180522_0
+  libpsl @0.20.2-20180522_1
+  libpsl @0.20.2-20190205_0
+  libpsl @0.21.0-20190419_0 (active)
+  libraw @0.19.0_0
+  libraw @0.19.2_0 (active)
+  librevenge @0.0.4_2 (active)
+  libsdl2 @2.0.8_0
+  libsdl2 @2.0.9_1
+  libsdl2 @2.0.9_2 (active)
+  libsigcxx2 @2.10.0_0
+  libsigcxx2 @2.10.1_0 (active)
+  libtool @2.4.6_5
+  libtool @2.4.6_6 (active)
+  libunistring @0.9.10_0 (active)
+  libuv @1.23.0_0
+  libuv @1.23.1_0
+  libuv @1.23.2_0
+  libuv @1.25.0_0
+  libuv @1.26.0_0
+  libuv @1.27.0_0
+  libuv @1.28.0_0
+  libuv @1.30.0_0 (active)
+  libvisio-0.1 @0.1.6_2 (active)
+  libwpd-0.10 @0.10.2_0
+  libwpd-0.10 @0.10.3_0 (active)
+  libwpg-0.3 @0.3.2_0
+  libwpg-0.3 @0.3.3_0 (active)
+  libxml2 @2.9.7_0
+  libxml2 @2.9.7_2
+  libxml2 @2.9.9_0
+  libxml2 @2.9.9_1 (active)
+  libxslt @1.1.32_0
+  libxslt @1.1.33_0
+  libxslt @1.1.33_1 (active)
+  libyaml @0.2.1_0
+  libyaml @0.2.2_1 (active)
+  llvm-6.0 @6.0.1_0 (active)
+  llvm-7.0 @7.0.0_0
+  llvm-7.0 @7.0.1_0
+  llvm-7.0 @7.0.1_1 (active)
+  llvm-8.0 @8.0.0_0 (active)
+  llvm_select @2_0 (active)
+  lz4 @1.8.2_0
+  lz4 @1.8.3_0
+  lz4 @1.9.1_0 (active)
+  lzo2 @2.10_0 (active)
+  mesa @17.1.6_1+osmesa+python27 (active)
+  minizip @1.2.11_0
+  minizip @1.2.11_1 (active)
+  mpfr @4.0.1_0
+  mpfr @4.0.2_0 (active)
+  mpi-doc @3.2_0
+  mpi-doc @3.3_0 (active)
+  mpi_select @0.0_3 (active)
+  mpich-default @3.2.1_4+gcc7
+  mpich-default @3.3_5+gcc7
+  mpich-default @3.3.1_0+gcc7 (active)
+  msgpack1 @1.4.2_0 (active)
+  ncurses @6.1_0 (active)
+  ninja @1.9.0_0 (active)
+  nosetests_select @0.1_0 (active)
+  ocaml @4.07.1_0 (active)
+  OpenBLAS @0.3.5_1+gcc8+lapack
+  OpenBLAS @0.3.6_0+gcc8+lapack
+  OpenBLAS @0.3.6_1+gcc8+lapack (active)
+  openexr @2.2.1_0
+  openexr @2.3.0_1 (active)
+  openjpeg @2.3.0_0
+  openjpeg @2.3.1_0 (active)
+  openmpi @3.0.0_0
+  openmpi @4.0.1_0 (active)
+  openmpi-default @3.0.0_0+gcc8
+  openmpi-default @4.0.1_0+gcc8 (active)
+  openssl @1.0.2p_0
+  openssl @1.0.2q_0
+  openssl @1.0.2r_0
+  openssl @1.0.2s_0 (active)
+  openssl10 @1.0.2r_0
+  openssl10 @1.0.2s_0 (active)
+  ossp-uuid @1.6.2_11+perl5_26 (active)
+  p5.26-authen-sasl @2.160.0_0 (active)
+  p5.26-cgi @4.400.0_0
+  p5.26-cgi @4.420.0_0
+  p5.26-cgi @4.430.0_0
+  p5.26-cgi @4.440.0_0 (active)
+  p5.26-cpan-meta @2.150.10_0 (active)
+  p5.26-cpan-meta-requirements @2.140.0_0 (active)
+  p5.26-cpan-meta-yaml @0.18.0_0 (active)
+  p5.26-data-dump @1.230.0_0 (active)
+  p5.26-digest-hmac @1.30.0_0 (active)
+  p5.26-digest-sha1 @2.130.0_4 (active)
+  p5.26-encode @3.10.0_0 (active)
+  p5.26-encode-locale @1.50.0_0 (active)
+  p5.26-error @0.170.260_0
+  p5.26-error @0.170.270_0 (active)
+  p5.26-file-listing @6.40.0_1 (active)
+  p5.26-getopt-long @2.500.0_0 (active)
+  p5.26-gssapi @0.280.0_3 (active)
+  p5.26-html-form @6.30.0_1
+  p5.26-html-form @6.40.0_0 (active)
+  p5.26-html-parser @3.720.0_0 (active)
+  p5.26-html-tagset @3.200.0_4 (active)
+  p5.26-http-cookies @6.40.0_0 (active)
+  p5.26-http-daemon @6.10.0_1
+  p5.26-http-daemon @6.40.0_0 (active)
+  p5.26-http-date @6.20.0_1 (active)
+  p5.26-http-message @6.180.0_0 (active)
+  p5.26-http-negotiate @6.10.0_1 (active)
+  p5.26-inc-latest @0.500.0_0 (active)
+  p5.26-io-html @1.1.0_0 (active)
+  p5.26-io-socket-ssl @2.59.0_0
+  p5.26-io-socket-ssl @2.60.0_0
+  p5.26-io-socket-ssl @2.66.0_0 (active)
+  p5.26-libwww-perl @6.350.0_0
+  p5.26-libwww-perl @6.360.0_0
+  p5.26-libwww-perl @6.380.0_0
+  p5.26-libwww-perl @6.390.0_0 (active)
+  p5.26-lwp-mediatypes @6.20.0_1
+  p5.26-lwp-mediatypes @6.40.0_0 (active)
+  p5.26-lwp-protocol-https @6.70.0_0 (active)
+  p5.26-module-build @0.422.400_0
+  p5.26-module-build @0.422.900_0 (active)
+  p5.26-module-metadata @1.0.33_0
+  p5.26-module-metadata @1.0.36_0 (active)
+  p5.26-mozilla-ca @20180117_0 (active)
+  p5.26-net-http @6.180.0_0
+  p5.26-net-http @6.190.0_0 (active)
+  p5.26-net-libidn @0.120.0_5 (active)
+  p5.26-net-smtp-ssl @1.40.0_0 (active)
+  p5.26-net-ssleay @1.850.0_0
+  p5.26-net-ssleay @1.880.0_0 (active)
+  p5.26-pathtools @3.750.0_0 (active)
+  p5.26-perl-ostype @1.10.0_0 (active)
+  p5.26-pod-escapes @1.70.0_0 (active)
+  p5.26-pod-simple @3.350.0_0
+  p5.26-pod-simple @3.390.0_0 (active)
+  p5.26-podlators @4.110.0_0
+  p5.26-podlators @4.120.0_0 (active)
+  p5.26-scalar-list-utils @1.500.0_0 (active)
+  p5.26-sub-name @0.210.0_0 (active)
+  p5.26-sub-uplevel @0.280.0_0 (active)
+  p5.26-term-readkey @2.370.0_0
+  p5.26-term-readkey @2.380.0_0 (active)
+  p5.26-test-exception @0.430.0_0 (active)
+  p5.26-test-nowarnings @1.40.0_1 (active)
+  p5.26-test-warn @0.360.0_0 (active)
+  p5.26-try-tiny @0.300.0_0 (active)
+  p5.26-uri @1.740.0_0
+  p5.26-uri @1.760.0_0 (active)
+  p5.26-version @0.992.400_0 (active)
+  p5.26-www-robotrules @6.20.0_1 (active)
+  p5.26-xml-parser @2.440.0_0 (active)
+  p5.28-cpan-meta @2.150.10_0 (active)
+  p5.28-cpan-meta-requirements @2.140.0_0 (active)
+  p5.28-cpan-meta-yaml @0.18.0_0 (active)
+  p5.28-data-dump @1.230.0_0 (active)
+  p5.28-encode @3.10.0_0 (active)
+  p5.28-encode-locale @1.50.0_0 (active)
+  p5.28-file-listing @6.40.0_1 (active)
+  p5.28-getopt-long @2.500.0_0 (active)
+  p5.28-html-form @6.30.0_1
+  p5.28-html-form @6.40.0_0 (active)
+  p5.28-html-parser @3.720.0_0 (active)
+  p5.28-html-tagset @3.200.0_4 (active)
+  p5.28-http-cookies @6.40.0_0 (active)
+  p5.28-http-daemon @6.10.0_1
+  p5.28-http-daemon @6.40.0_0 (active)
+  p5.28-http-date @6.20.0_1 (active)
+  p5.28-http-message @6.180.0_0 (active)
+  p5.28-http-negotiate @6.10.0_1 (active)
+  p5.28-inc-latest @0.500.0_0 (active)
+  p5.28-io-html @1.1.0_0 (active)
+  p5.28-io-socket-ssl @2.60.0_0
+  p5.28-io-socket-ssl @2.66.0_0 (active)
+  p5.28-libwww-perl @6.360.0_0
+  p5.28-libwww-perl @6.380.0_0
+  p5.28-libwww-perl @6.390.0_0 (active)
+  p5.28-lwp-mediatypes @6.20.0_1
+  p5.28-lwp-mediatypes @6.40.0_0 (active)
+  p5.28-lwp-protocol-https @6.70.0_0 (active)
+  p5.28-module-build @0.422.400_0
+  p5.28-module-build @0.422.900_0 (active)
+  p5.28-module-metadata @1.0.33_0
+  p5.28-module-metadata @1.0.36_0 (active)
+  p5.28-mozilla-ca @20180117_0 (active)
+  p5.28-net-http @6.180.0_0
+  p5.28-net-http @6.190.0_0 (active)
+  p5.28-net-libidn @0.120.0_5 (active)
+  p5.28-net-ssleay @1.850.0_0
+  p5.28-net-ssleay @1.880.0_0 (active)
+  p5.28-pathtools @3.750.0_0 (active)
+  p5.28-perl-ostype @1.10.0_0 (active)
+  p5.28-pod-escapes @1.70.0_0 (active)
+  p5.28-pod-simple @3.350.0_0
+  p5.28-pod-simple @3.390.0_0 (active)
+  p5.28-podlators @4.110.0_0
+  p5.28-podlators @4.120.0_0 (active)
+  p5.28-scalar-list-utils @1.500.0_0 (active)
+  p5.28-sub-name @0.210.0_0 (active)
+  p5.28-sub-uplevel @0.280.0_0 (active)
+  p5.28-test-exception @0.430.0_0 (active)
+  p5.28-test-nowarnings @1.40.0_1 (active)
+  p5.28-test-warn @0.360.0_0 (active)
+  p5.28-try-tiny @0.300.0_0 (active)
+  p5.28-uri @1.760.0_0 (active)
+  p5.28-version @0.992.400_0 (active)
+  p5.28-www-robotrules @6.20.0_1 (active)
+  p5.28-xml-parser @2.440.0_0 (active)
+  pango @1.42.4_0+quartz+x11 (active)
+  pangomm @2.40.1_0+x11
+  pangomm @2.42.0_0+x11 (active)
+  pcre @8.42_0
+  pcre @8.43_0 (active)
+  pcre2 @10.31_0
+  pcre2 @10.32_0
+  pcre2 @10.33_0 (active)
+  perl5 @5.26.1_0+perl5_26 (active)
+  perl5.26 @5.26.2_1
+  perl5.26 @5.26.3_2 (active)
+  perl5.28 @5.28.1_1
+  perl5.28 @5.28.2_0 (active)
+  pip_select @0.1_0
+  pip_select @0.1_1 (active)
+  pkgconfig @0.29.2_0 (active)
+  poppler-data @0.4.9_0 (active)
+  popt @1.16_0 (active)
+  potrace @1.15_0 (active)
+  py27-altgraph @0.16.1_0 (active)
+  py27-backports @1.0_0 (active)
+  py27-backports-functools_lru_cache @1.5_1 (active)
+  py27-backports_abc @0.5_0 (active)
+  py27-beaker @1.10.0_0
+  py27-beaker @1.10.1_0 (active)
+  py27-biopython @1.72_0
+  py27-biopython @1.73_0 (active)
+  py27-cairo @1.17.1_0
+  py27-cairo @1.18.0_0
+  py27-cairo @1.18.1_0 (active)
+  py27-certifi @2018.08.24_0
+  py27-certifi @2018.11.29_0
+  py27-certifi @2019.03.09_0
+  py27-certifi @2019.06.16_0 (active)
+  py27-cycler @0.10.0_0 (active)
+  py27-cython @0.28.5_0
+  py27-cython @0.29.4_0
+  py27-cython @0.29.5_0
+  py27-cython @0.29.6_0
+  py27-cython @0.29.7_0
+  py27-cython @0.29.12_0 (active)
+  py27-dateutil @2.7.3_0
+  py27-dateutil @2.7.5_0
+  py27-dateutil @2.8.0_0 (active)
+  py27-decorator @4.3.0_0
+  py27-decorator @4.3.2_0
+  py27-decorator @4.4.0_0 (active)
+  py27-enum34 @1.1.6_0 (active)
+  py27-funcsigs @1.0.2_0 (active)
+  py27-functools32 @3.2.3-2_0 (active)
+  py27-futures @3.2.0_0 (active)
+  py27-kiwisolver @1.0.1_0
+  py27-kiwisolver @1.1.0_0 (active)
+  py27-lxml @4.2.3_0
+  py27-lxml @4.3.0_0
+  py27-lxml @4.3.2_0 (active)
+  py27-macholib @1.11_0 (active)
+  py27-mako @1.0.7_0
+  py27-mako @1.0.8_0
+  py27-mako @1.0.10_0
+  py27-mako @1.0.13_0 (active)
+  py27-markdown @3.0.1_0
+  py27-markdown @3.1_0
+  py27-markdown @3.1.1_0 (active)
+  py27-markupsafe @1.0_0
+  py27-markupsafe @1.1.0_0
+  py27-markupsafe @1.1.1_0 (active)
+  py27-matplotlib @2.2.2_0+cairo
+  py27-matplotlib @2.2.3_0+cairo+webagg
+  py27-matplotlib @2.2.4_0+cairo+webagg (active)
+  py27-meta-devel @0.4.1_20130222 (active)
+  py27-modulegraph @0.17_0 (active)
+  py27-monotonic @1.5_0 (active)
+  py27-mpi4py @3.0.0_0+mpich (active)
+  py27-networkx @2.2_0 (active)
+  py27-nose @1.3.7_1 (active)
+  py27-numpy @1.15.1_0+gfortran
+  py27-numpy @1.15.2_0+gfortran
+  py27-numpy @1.15.2_1+gfortran
+  py27-numpy @1.15.4_0+gfortran
+  py27-numpy @1.16.1_0+gfortran
+  py27-numpy @1.16.2_1+gfortran+openblas
+  py27-numpy @1.16.3_0+gfortran+openblas
+  py27-numpy @1.16.4_0+gfortran+openblas (active)
+  py27-parsing @2.2.0_0 (active)
+  py27-pip @18.0_0
+  py27-pip @18.1_0
+  py27-pip @19.0.1_0
+  py27-pip @19.0.2_0
+  py27-pip @19.0.3_0
+  py27-pip @19.1.1_0 (active)
+  py27-pmw @2.0.0_1
+  py27-pmw @2.0.0_2 (active)
+  py27-py2app @0.16_0
+  py27-py2app @0.17_0
+  py27-py2app @0.18_0
+  py27-py2app @0.19_0 (active)
+  py27-pyobjc @3.0.4_0
+  py27-pyobjc @5.1.2_1
+  py27-pyobjc @5.2_0 (active)
+  py27-pyobjc-cocoa @3.0.4_1
+  py27-pyobjc-cocoa @5.1.2_0
+  py27-pyobjc-cocoa @5.2_0 (active)
+  py27-pyqt5 @5.11.2_0
+  py27-pyqt5 @5.11.3_1
+  py27-pyqt5 @5.12.1_0
+  py27-pyqt5 @5.12.2_0 (active)
+  py27-scipy @1.1.0_0+gfortran
+  py27-scipy @1.1.0_1+gfortran
+  py27-scipy @1.2.1_0+gfortran+openblas
+  py27-scipy @1.2.2_0+gfortran+openblas (active)
+  py27-setuptools @40.2.0_0
+  py27-setuptools @40.4.2_0
+  py27-setuptools @40.7.1_0
+  py27-setuptools @40.8.0_0
+  py27-setuptools @41.0.0_0
+  py27-setuptools @41.0.1_0 (active)
+  py27-singledispatch @3.4.0.3_0 (active)
+  py27-sip @4.19.12_0
+  py27-sip @4.19.13_0
+  py27-sip @4.19.14_0
+  py27-sip @4.19.15_0
+  py27-sip @4.19.17_0 (active)
+  py27-six @1.11.0_0
+  py27-six @1.12.0_0 (active)
+  py27-subprocess32 @3.5.2_0
+  py27-subprocess32 @3.5.3_0 (active)
+  py27-tkinter @2.7.15_0
+  py27-tkinter @2.7.16_0 (active)
+  py27-tornado @5.1_1
+  py27-tornado @5.1.1_0 (active)
+  py27-tz @2018.5_0
+  py27-tz @2018.9_0 (active)
+  py37-altgraph @0.16.1_0 (active)
+  py37-appnope @0.1.0_0 (active)
+  py37-attrs @19.1.0_0 (active)
+  py37-backcall @0.1.0_0 (active)
+  py37-biopython @1.72_0
+  py37-biopython @1.73_0 (active)
+  py37-bleach @3.0.2_0
+  py37-bleach @3.1.0_0 (active)
+  py37-bokeh @1.0.4_1
+  py37-bokeh @1.1.0_0
+  py37-bokeh @1.2.0_0 (active)
+  py37-cairo @1.17.1_0
+  py37-cairo @1.18.0_0
+  py37-cairo @1.18.1_0 (active)
+  py37-cycler @0.10.0_0 (active)
+  py37-cython @0.28.5_0
+  py37-cython @0.29.5_0
+  py37-cython @0.29.6_0
+  py37-cython @0.29.7_0
+  py37-cython @0.29.12_0 (active)
+  py37-dateutil @2.7.3_0
+  py37-dateutil @2.8.0_0 (active)
+  py37-decorator @4.3.0_0
+  py37-decorator @4.3.2_0
+  py37-decorator @4.4.0_0 (active)
+  py37-defusedxml @0.5.0_0
+  py37-defusedxml @0.6.0_0 (active)
+  py37-entrypoints @0.2.3_0
+  py37-entrypoints @0.3_0 (active)
+  py37-ipykernel @5.0.0_0
+  py37-ipykernel @5.1.0_0
+  py37-ipykernel @5.1.1_0 (active)
+  py37-ipython @6.5.0_0
+  py37-ipython @7.4.0_0
+  py37-ipython @7.5.0_0
+  py37-ipython @7.6.1_0 (active)
+  py37-ipython_genutils @0.2.0_0 (active)
+  py37-ipywidgets @7.4.2_0
+  py37-ipywidgets @7.5.0_0 (active)
+  py37-jedi @0.13.1_0
+  py37-jedi @0.13.2_0
+  py37-jedi @0.13.3_0
+  py37-jedi @0.14.0_0 (active)
+  py37-jinja2 @2.10_0
+  py37-jinja2 @2.10.1_0 (active)
+  py37-joblib @0.13.2_0 (active)
+  py37-jsonschema @2.6.0_0
+  py37-jsonschema @3.0.1_0 (active)
+  py37-jupyter @1.0.0_1 (active)
+  py37-jupyter_client @5.2.3_1
+  py37-jupyter_client @5.2.4_0 (active)
+  py37-jupyter_console @5.2.0_0
+  py37-jupyter_console @6.0.0_0 (active)
+  py37-jupyter_core @4.4.0_0
+  py37-jupyter_core @4.5.0_0 (active)
+  py37-kiwisolver @1.0.1_0
+  py37-kiwisolver @1.1.0_0 (active)
+  py37-macholib @1.11_0 (active)
+  py37-markupsafe @1.0_0
+  py37-markupsafe @1.1.0_0
+  py37-markupsafe @1.1.1_0 (active)
+  py37-matplotlib @3.0.0_0+cairo+webagg
+  py37-matplotlib @3.0.2_0+cairo+webagg
+  py37-matplotlib @3.0.3_0+cairo+webagg
+  py37-matplotlib @3.1.1_0+cairo+webagg (active)
+  py37-mistune @0.8.4_0 (active)
+  py37-modulegraph @0.17_0 (active)
+  py37-nbconvert @5.4.0_0
+  py37-nbconvert @5.4.1_0
+  py37-nbconvert @5.5.0_0 (active)
+  py37-nbformat @4.4.0_0 (active)
+  py37-nose @1.3.7_1 (active)
+  py37-notebook @5.7.0_0
+  py37-notebook @5.7.4_0
+  py37-notebook @5.7.8_0 (active)
+  py37-numpy @1.15.1_0+gfortran
+  py37-numpy @1.15.2_0+gfortran
+  py37-numpy @1.15.2_1+gfortran
+  py37-numpy @1.16.1_0+gfortran
+  py37-numpy @1.16.2_1+gfortran+openblas
+  py37-numpy @1.16.3_0+gfortran+openblas
+  py37-numpy @1.16.4_0+gfortran+openblas (active)
+  py37-olefile @0.45.1_0
+  py37-olefile @0.46_0 (active)
+  py37-packaging @19.0_0 (active)
+  py37-pandocfilters @1.4.2_0 (active)
+  py37-parsing @2.2.0_0 (active)
+  py37-parso @0.3.1_0
+  py37-parso @0.3.4_0
+  py37-parso @0.4.0_0
+  py37-parso @0.5.0_0 (active)
+  py37-pexpect @4.6.0_0
+  py37-pexpect @4.7.0_0 (active)
+  py37-pickleshare @0.7.5_0 (active)
+  py37-Pillow @5.4.1_0
+  py37-Pillow @6.0.0_0 (active)
+  py37-pip @18.0_0
+  py37-pip @18.1_0
+  py37-pip @19.0.2_0
+  py37-pip @19.0.3_0
+  py37-pip @19.1.1_0 (active)
+  py37-prometheus_client @0.4.1_0
+  py37-prometheus_client @0.5.0_0
+  py37-prometheus_client @0.6.0_0
+  py37-prometheus_client @0.7.1_0 (active)
+  py37-prompt_toolkit @1.0.15_0
+  py37-prompt_toolkit @2.0.9_0 (active)
+  py37-ptyprocess @0.6.0_0 (active)
+  py37-py2app @0.18_0
+  py37-py2app @0.19_0 (active)
+  py37-pygments @2.2.0_1
+  py37-pygments @2.3.1_0
+  py37-pygments @2.4.2_0 (active)
+  py37-pyobjc @3.0.4_0
+  py37-pyobjc @5.1.2_1
+  py37-pyobjc @5.2_0 (active)
+  py37-pyobjc-cocoa @3.0.4_1
+  py37-pyobjc-cocoa @5.1.2_0
+  py37-pyobjc-cocoa @5.2_0 (active)
+  py37-pyrsistent @0.14.11_0
+  py37-pyrsistent @0.15.2_0 (active)
+  py37-scikit-learn @0.20.0_0
+  py37-scikit-learn @0.20.2_0
+  py37-scikit-learn @0.20.3_0
+  py37-scikit-learn @0.21.2_0 (active)
+  py37-scipy @1.1.0_0+gfortran
+  py37-scipy @1.1.0_1+gfortran
+  py37-scipy @1.2.1_0+gfortran+openblas
+  py37-scipy @1.3.0_0+gfortran+openblas (active)
+  py37-send2trash @1.5.0_0 (active)
+  py37-setuptools @40.2.0_0
+  py37-setuptools @40.4.2_0
+  py37-setuptools @40.8.0_0
+  py37-setuptools @41.0.0_0
+  py37-setuptools @41.0.1_0 (active)
+  py37-simplegeneric @0.8.1_0 (active)
+  py37-six @1.11.0_0
+  py37-six @1.12.0_0 (active)
+  py37-terminado @0.8.1_0
+  py37-terminado @0.8.2_0 (active)
+  py37-testpath @0.4.2_0 (active)
+  py37-tkinter @3.7.2_0
+  py37-tkinter @3.7.3_0 (active)
+  py37-tornado @5.1.1_0
+  py37-tornado @6.0.2_0
+  py37-tornado @6.0.3_0 (active)
+  py37-traitlets @4.3.2_0 (active)
+  py37-tz @2018.5_0
+  py37-tz @2018.9_0 (active)
+  py37-virtualenv @16.3.0_0
+  py37-virtualenv @16.4.3_0
+  py37-virtualenv @16.5.0_0
+  py37-virtualenv @16.6.1_0 (active)
+  py37-wcwidth @0.1.7_0 (active)
+  py37-webencodings @0.5.1_0 (active)
+  py37-widgetsnbextension @3.4.2_0
+  py37-widgetsnbextension @3.5.0_0 (active)
+  py37-yaml @3.13_0 (active)
+  py37-zmq @17.1.2_0
+  py37-zmq @18.0.1_0 (active)
+  pygments_select @0.1_0 (active)
+  pymol @2.2.0_0+python27
+  pymol @2.3.0_0+python27 (active)
+  python2_select @0.0_2
+  python2_select @0.0_3 (active)
+  python3_select @0.0_1 (active)
+  python27 @2.7.15_0
+  python27 @2.7.15_1
+  python27 @2.7.16_1 (active)
+  python37 @3.7.0_0
+  python37 @3.7.2_0
+  python37 @3.7.3_0 (active)
+  python_select @0.3_7
+  python_select @0.3_8 (active)
+  qhull @2015.2_1 (active)
+  qt5 @5.11.1_0
+  qt5 @5.11.2_0
+  qt5 @5.12.1_0
+  qt5 @5.12.2_0
+  qt5 @5.12.3_0
+  qt5 @5.12.4_0 (active)
+  qt5-qt3d @5.11.1_0
+  qt5-qt3d @5.11.2_0
+  qt5-qt3d @5.12.1_0
+  qt5-qt3d @5.12.2_0
+  qt5-qt3d @5.12.3_0
+  qt5-qt3d @5.12.4_0 (active)
+  qt5-qtbase @5.11.1_0+openssl
+  qt5-qtbase @5.11.2_0+openssl
+  qt5-qtbase @5.12.0_2+openssl
+  qt5-qtbase @5.12.1_0+openssl
+  qt5-qtbase @5.12.2_0+openssl
+  qt5-qtbase @5.12.3_0+openssl
+  qt5-qtbase @5.12.4_0+openssl (active)
+  qt5-qtcanvas3d @5.11.1_0
+  qt5-qtcanvas3d @5.11.2_0
+  qt5-qtcanvas3d @5.12.1_0
+  qt5-qtcanvas3d @5.12.2_0
+  qt5-qtcanvas3d @5.12.3_0
+  qt5-qtcanvas3d @5.12.4_0 (active)
+  qt5-qtconnectivity @5.11.1_0
+  qt5-qtconnectivity @5.11.2_0
+  qt5-qtconnectivity @5.12.1_0
+  qt5-qtconnectivity @5.12.2_0
+  qt5-qtconnectivity @5.12.3_0
+  qt5-qtconnectivity @5.12.4_0 (active)
+  qt5-qtdeclarative @5.11.1_0
+  qt5-qtdeclarative @5.11.2_0
+  qt5-qtdeclarative @5.12.1_0
+  qt5-qtdeclarative @5.12.2_0
+  qt5-qtdeclarative @5.12.3_0
+  qt5-qtdeclarative @5.12.4_0 (active)
+  qt5-qtgamepad @5.11.1_0
+  qt5-qtgamepad @5.11.2_0
+  qt5-qtgamepad @5.12.1_0
+  qt5-qtgamepad @5.12.2_0
+  qt5-qtgamepad @5.12.3_0
+  qt5-qtgamepad @5.12.4_0 (active)
+  qt5-qtgraphicaleffects @5.11.1_0
+  qt5-qtgraphicaleffects @5.11.2_0
+  qt5-qtgraphicaleffects @5.12.1_0
+  qt5-qtgraphicaleffects @5.12.2_0
+  qt5-qtgraphicaleffects @5.12.3_0
+  qt5-qtgraphicaleffects @5.12.4_0 (active)
+  qt5-qtimageformats @5.11.1_0
+  qt5-qtimageformats @5.11.2_0
+  qt5-qtimageformats @5.12.1_0
+  qt5-qtimageformats @5.12.2_0
+  qt5-qtimageformats @5.12.3_0
+  qt5-qtimageformats @5.12.4_0 (active)
+  qt5-qtlocation @5.11.1_0
+  qt5-qtlocation @5.11.2_0
+  qt5-qtlocation @5.12.1_0
+  qt5-qtlocation @5.12.2_0
+  qt5-qtlocation @5.12.3_0
+  qt5-qtlocation @5.12.4_0 (active)
+  qt5-qtmacextras @5.11.1_0
+  qt5-qtmacextras @5.11.2_0
+  qt5-qtmacextras @5.12.1_0
+  qt5-qtmacextras @5.12.2_0
+  qt5-qtmacextras @5.12.3_0
+  qt5-qtmacextras @5.12.4_0 (active)
+  qt5-qtmultimedia @5.11.1_0
+  qt5-qtmultimedia @5.11.2_0
+  qt5-qtmultimedia @5.12.1_0
+  qt5-qtmultimedia @5.12.2_0
+  qt5-qtmultimedia @5.12.3_0
+  qt5-qtmultimedia @5.12.4_0 (active)
+  qt5-qtnetworkauth @5.11.1_0
+  qt5-qtnetworkauth @5.11.2_0
+  qt5-qtnetworkauth @5.12.1_0
+  qt5-qtnetworkauth @5.12.2_0
+  qt5-qtnetworkauth @5.12.3_0
+  qt5-qtnetworkauth @5.12.4_0 (active)
+  qt5-qtquickcontrols @5.11.1_0
+  qt5-qtquickcontrols @5.11.2_0
+  qt5-qtquickcontrols @5.12.1_0
+  qt5-qtquickcontrols @5.12.2_0
+  qt5-qtquickcontrols @5.12.3_0
+  qt5-qtquickcontrols @5.12.4_0 (active)
+  qt5-qtquickcontrols2 @5.11.1_0
+  qt5-qtquickcontrols2 @5.11.2_0
+  qt5-qtquickcontrols2 @5.12.1_0
+  qt5-qtquickcontrols2 @5.12.2_0
+  qt5-qtquickcontrols2 @5.12.3_0
+  qt5-qtquickcontrols2 @5.12.4_0 (active)
+  qt5-qtscript @5.11.1_0
+  qt5-qtscript @5.11.2_0
+  qt5-qtscript @5.12.1_0
+  qt5-qtscript @5.12.2_0
+  qt5-qtscript @5.12.3_0
+  qt5-qtscript @5.12.4_0 (active)
+  qt5-qtscxml @5.11.1_0
+  qt5-qtscxml @5.11.2_0
+  qt5-qtscxml @5.12.1_0
+  qt5-qtscxml @5.12.2_0
+  qt5-qtscxml @5.12.3_0
+  qt5-qtscxml @5.12.4_0 (active)
+  qt5-qtsensors @5.11.1_0
+  qt5-qtsensors @5.11.2_0
+  qt5-qtsensors @5.12.1_0
+  qt5-qtsensors @5.12.2_0
+  qt5-qtsensors @5.12.3_0
+  qt5-qtsensors @5.12.4_0 (active)
+  qt5-qtserialbus @5.11.1_0
+  qt5-qtserialbus @5.11.2_0
+  qt5-qtserialbus @5.12.1_0
+  qt5-qtserialbus @5.12.2_0
+  qt5-qtserialbus @5.12.3_0
+  qt5-qtserialbus @5.12.4_0 (active)
+  qt5-qtserialport @5.11.1_0
+  qt5-qtserialport @5.11.2_0
+  qt5-qtserialport @5.12.1_0
+  qt5-qtserialport @5.12.2_0
+  qt5-qtserialport @5.12.3_0
+  qt5-qtserialport @5.12.4_0 (active)
+  qt5-qtspeech @5.11.1_0
+  qt5-qtspeech @5.11.2_0
+  qt5-qtspeech @5.12.1_0
+  qt5-qtspeech @5.12.2_0
+  qt5-qtspeech @5.12.3_0
+  qt5-qtspeech @5.12.4_0 (active)
+  qt5-qtsvg @5.11.1_0
+  qt5-qtsvg @5.11.2_0
+  qt5-qtsvg @5.12.1_0
+  qt5-qtsvg @5.12.2_0
+  qt5-qtsvg @5.12.3_0
+  qt5-qtsvg @5.12.4_0 (active)
+  qt5-qttools @5.11.1_0
+  qt5-qttools @5.11.2_0
+  qt5-qttools @5.12.1_0
+  qt5-qttools @5.12.2_0
+  qt5-qttools @5.12.3_0
+  qt5-qttools @5.12.4_0 (active)
+  qt5-qttranslations @5.11.1_0
+  qt5-qttranslations @5.11.2_0
+  qt5-qttranslations @5.12.1_0
+  qt5-qttranslations @5.12.2_0
+  qt5-qttranslations @5.12.3_0
+  qt5-qttranslations @5.12.4_0 (active)
+  qt5-qtwebchannel @5.11.1_0
+  qt5-qtwebchannel @5.11.2_0
+  qt5-qtwebchannel @5.12.1_0
+  qt5-qtwebchannel @5.12.2_0
+  qt5-qtwebchannel @5.12.3_0
+  qt5-qtwebchannel @5.12.4_0 (active)
+  qt5-qtwebsockets @5.11.1_0
+  qt5-qtwebsockets @5.11.2_0
+  qt5-qtwebsockets @5.12.1_0
+  qt5-qtwebsockets @5.12.2_0
+  qt5-qtwebsockets @5.12.3_0
+  qt5-qtwebsockets @5.12.4_0 (active)
+  qt5-qtxmlpatterns @5.11.1_0
+  qt5-qtxmlpatterns @5.11.2_0
+  qt5-qtxmlpatterns @5.12.1_0
+  qt5-qtxmlpatterns @5.12.2_0
+  qt5-qtxmlpatterns @5.12.3_0
+  qt5-qtxmlpatterns @5.12.4_0 (active)
+  qt5-sqlite-plugin @5.11.1_0
+  qt5-sqlite-plugin @5.11.2_0
+  qt5-sqlite-plugin @5.12.1_0
+  qt5-sqlite-plugin @5.12.2_0
+  qt5-sqlite-plugin @5.12.3_0
+  qt5-sqlite-plugin @5.12.4_0 (active)
+  rb-libxml2 @2.3.4_0 (active)
+  rb-mini_portile @0.5.1_0 (active)
+  rb-nokogiri @1.6.0_0 (active)
+  rb-rubygems @1.3.7_2+ruby (active)
+  readline @7.0.005_0
+  readline @8.0.000_0 (active)
+  rsync @3.1.3_0 (active)
+  scons @3.0.1_0
+  scons @3.0.4_0
+  scons @3.0.5_0 (active)
+  shared-mime-info @1.10_0 (active)
+  swig @3.0.12_2 (active)
+  swig-python @3.0.12_2 (active)
+  tcl @8.6.8_0+corefoundation+threads
+  tcl @8.6.8_0+threads
+  tcl @8.6.8_1+threads
+  tcl @8.6.9_1+threads (active)
+  texinfo @6.5_2
+  texinfo @6.5_4
+  texinfo @6.6_0 (active)
+  tiff @4.0.9_0
+  tiff @4.0.10_1 (active)
+  tk @8.6.8_1+x11
+  tk @8.6.8_4+x11
+  tk @8.6.9_1+x11
+  tk @8.6.9_2+x11 (active)
+  urw-fonts @1.0.7pre44_0 (active)
+  vim @8.1.0280_0+huge
+  vim @8.1.0577_0+huge
+  vim @8.1.1368_0+huge (active)
+  virtualenv_select @0.1_0 (active)
+  webp @1.0.0_0
+  webp @1.0.2_0 (active)
+  xar @1.6.1_0 (active)
+  xdpyinfo @1.3.2_0 (active)
+  Xft2 @2.3.2_0
+  Xft2 @2.3.3_0 (active)
+  xorg-libdmx @1.1.4_1 (active)
+  xorg-libice @1.0.9_1 (active)
+  xorg-libpthread-stubs @0.4_0 (active)
+  xorg-libsm @1.2.2_0
+  xorg-libsm @1.2.3_0 (active)
+  xorg-libX11 @1.6.6_1
+  xorg-libX11 @1.6.7_0
+  xorg-libX11 @1.6.8_0 (active)
+  xorg-libXau @1.0.8_1
+  xorg-libXau @1.0.9_0 (active)
+  xorg-libxcb @1.13_1+python27
+  xorg-libxcb @1.13.1_0+python27 (active)
+  xorg-libXcomposite @0.4.4_1
+  xorg-libXcomposite @0.4.5_0 (active)
+  xorg-libXcursor @1.1.15_1
+  xorg-libXcursor @1.2.0_0 (active)
+  xorg-libXdamage @1.1.4_1
+  xorg-libXdamage @1.1.5_0 (active)
+  xorg-libXdmcp @1.1.2_1
+  xorg-libXdmcp @1.1.3_0 (active)
+  xorg-libXext @1.3.3_1
+  xorg-libXext @1.3.4_0 (active)
+  xorg-libXfixes @5.0.3_1 (active)
+  xorg-libXi @1.7.9_1
+  xorg-libXi @1.7.10_0 (active)
+  xorg-libXinerama @1.1.4_1 (active)
+  xorg-libXmu @1.1.2_0
+  xorg-libXmu @1.1.3_0 (active)
+  xorg-libXrandr @1.5.1_1
+  xorg-libXrandr @1.5.2_0 (active)
+  xorg-libXScrnSaver @1.2.3_1 (active)
+  xorg-libXt @1.1.5_2
+  xorg-libXt @1.2.0_0 (active)
+  xorg-libXtst @1.2.3_1 (active)
+  xorg-libXxf86vm @1.1.4_1 (active)
+  xorg-xcb-proto @1.13_0+python27
+  xorg-xcb-proto @1.13_1+python27 (active)
+  xorg-xcb-util @0.4.0_1 (active)
+  xorg-xorgproto @2018.4_0
+  xorg-xorgproto @2019.1_1 (active)
+  xrender @0.9.10_1 (active)
+  xz @5.2.4_0 (active)
+  zlib @1.2.11_0 (active)
+  zmq @4.2.5_0
+  zmq @4.3.1_0 (active)
+  zstd @1.3.8_0
+  zstd @1.4.0_0 (active)

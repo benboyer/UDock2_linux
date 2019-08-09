@@ -30,6 +30,25 @@ Optionally you can specify mol2 files :
 
 Note that for now you can only launch udock from build.
 
+### macOS
+
+Udock has been also tested on macOS High Sierra (and probably working in other versions of macOS). `clang` is used for compilation. Additional required software may be installed using the [MacPorts project](https://www.macports.org/). List of installed ports is available in the file `ports.list`. Similar configuration could be matched by using [Homebrew](https://brew.sh/).
+
+```
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/local/lib"
+rm -rf build
+mkdir build
+cd build
+cmake ..
+make
+```
+
+To launch:
+
+	cd build
+	./udock
+
+
 ### Windows
 
 open the .sln file with visual studio.
