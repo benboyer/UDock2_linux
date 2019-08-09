@@ -1,1 +1,9 @@
-/home/bboyer/Desktop/miniMolViewer-release/build/CMakeFiles/udock.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/install/local.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/install/strip.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/install.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/list_install_components.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/package_source.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/rebuild_cache.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/edit_cache.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/package.dir
+/Users/bjimenez/workspaces/paris/UDock2_macos/build/CMakeFiles/udock.dir
