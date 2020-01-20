@@ -35,6 +35,8 @@ struct scene_docking_data
 	bool showCamFocus;
 	bool* showSkybox;
 	bool resizeWindows;
+	bool fullscreen;
+	
 	ImVec4* bgColor;
 	// ContraintRenderer* c;
 

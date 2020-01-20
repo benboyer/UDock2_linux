@@ -149,7 +149,7 @@ void optionWindow (SDL_Window* window,scene_docking_data& docking_data,bool* ope
             {
 		        ImGui::End();
 		    }else{
-                static int item = 1;
+                static int item = 2;
                 ImGui::Combo("screen resolution", &item, " 1024x768\0 1280x960\0 1920x1080(hd 1080)\0 2048x1080(2K)\0 4096x2160(4k)\0 3840x2160(UHD-1)\0\0");
             // std::cout <<"screen_resolution "<< item << std::endl;
                 if(item == 0){changeResolution (window,docking_data,1024,768);}
@@ -164,15 +164,18 @@ void optionWindow (SDL_Window* window,scene_docking_data& docking_data,bool* ope
                 ImGui::Checkbox("invert Y axis", docking_data.invertedAxis);//already a pointer
                 ImGui::SliderFloat("mouse sensitivity (default 1)",docking_data.mouseSensitivity,0.001f,3.0f,"ratio = %.3f");
                 
-                bool fullscreen;
-                ImGui::Checkbox("fullscreen", &fullscreen);
-                // if (fullscreen){
-                //     SDL_SetWindowFullscreen(window,SDL_WINDOW_FULLSCREEN_DESKTOP);
-
-                // }
-                // else{
-                //     SDL_SetWindowFullscreen(window,0);
-                // }
+                // bool fullscreen;
+                ImGui::Checkbox("fullscreen", &docking_data.fullscreen);
+                if (docking_data.fullscreen){
+                    SDL_SetWindowFullscreen(window,SDL_WINDOW_FULLSCREEN_DESKTOP);
+                    SDL_DisplayMode dm ;
+                    SDL_GetDesktopDisplayMode(0, &dm);
+                    std::cout << dm.w << " " << dm.h <<std::endl;
+                    changeResolution (window,docking_data,dm.w,dm.h);
+                }
+                else{
+                    SDL_SetWindowFullscreen(window,0);
+                }
 
 	            ImGui::End();
         }

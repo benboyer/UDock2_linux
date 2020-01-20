@@ -708,6 +708,7 @@ int main(int argc, char* argv[])
     spaceship_data.framebuffer = getScreenFramebuffer(spaceship_data.texColorBuffer,spaceship_data.texDepthBuffer);
 
     docking_data.resizeWindows = false;
+    docking_data.fullscreen = false;
     //shader to render the framebuffer on the screen quad
     Shader screenQuadShader = basicShader("../shaders/screen.vertex.glsl","../shaders/screen.fragment.glsl");
 
