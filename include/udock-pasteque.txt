@@ -1,7 +1,0 @@
-udock
-
-jeux serieux, ammarage moleculaire.
-
-Udock est un jeux serieux portant sur l'ammarage moleculaire, c'est a dire la prediction du site de contact de deux molecules quand elles interagissent entre elles. Les molecules etudiés sont les proteines, qui composent la majorité de la machinerie du vivant. Prédire les modalités de leur interactions permet de comprendre le fonctionnement de la cellule et de pouvoir intervenir dans son mechanisme, notament dans le cadre d'une thérapie. Udock permet d'approcher ludiquement cette problèmatique en transformant l'energie d'interaction, c'est a dire la mesure de la stabilité de la liasons entre deux molecules, en score a battre. Le joueur est ainsi guider, au traver d'une experience réactive et de modes d'explorations orignaux, a réaliser une exploration preliminaire de l'interaction entre deux proteines. Ces resultats peuvent en suite eventuelement etres exploité a l'aide d'outils plus précis.
-
-Ainsi, Udock a été utilisé comme outil d'initiation pour des utilisateurs non expert du domaine, comme outils de pedagogie pour des etudiants mais aussi comme un outil d'exploration rapide et leger par des utilisateur expert.
