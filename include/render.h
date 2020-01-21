@@ -338,6 +338,10 @@ void spaceship_render (scene_spaceship_data &spaceship_data){
 	        glDrawArrays(GL_TRIANGLES, 0, spaceship_data.spaceshipVertices/3);
 	        glBindVertexArray(0);
 
+            spaceship_data.pe->view = view;
+            spaceship_data.pe->proj = proj;
+            spaceship_data.pe->render();
+
 	        
 		}
 
@@ -443,9 +447,7 @@ void spaceship_render (scene_spaceship_data &spaceship_data){
 
 
 
-        spaceship_data.pe->view = view;
-        spaceship_data.pe->proj = proj;
-        spaceship_data.pe->render();
+       
 
 
 		if (*spaceship_data.showSkybox){
