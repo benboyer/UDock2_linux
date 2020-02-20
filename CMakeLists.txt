@@ -136,7 +136,15 @@ project(udock)
 
 # enable C++11 standard
 set(CMAKE_CXX_STANDARD 11) 
+
+if(APPLE)
+# Clang does not support static-libgcc
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -g")
+else()
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -static-libgcc -static-libstdc++")
+ENDIF()
+
+SET(CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} -framework CoreFoundation")
 
 #Bring the headers,into the project
 include_directories(include glm-0.9.9.5 bullet/src imgui CPPCartoon)
@@ -169,7 +177,7 @@ include_directories(include glm-0.9.9.5 bullet imgui)
 
 
 
-IF(WIN32 OR APPLE) # Check if we are on Windows
+IF(WIN32) # Check if we are on Windows
 
 # SDL
 set(SDL_ROOT            "${miniMolViewer_SOURCE_DIR}/SDL2-2.0.5/i686-w64-mingw32/")
@@ -197,8 +205,13 @@ elseif(UNIX)
 INCLUDE(FindPkgConfig)
 PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
 
+elseif(APPLE)
+INCLUDE(FindPkgConfig)
+PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
+target_link_libraries(${PROJECT_NAME} -demangle -dynamic -arch x86_64)
+
 else()
-  message(SEND_ERROR "You are on an unsupported platform! (Not Win32 or Unix)")
+  message(SEND_ERROR "You are on an unsupported platform! (Not Win32, Apple or Unix)")
 ENDIF()
 
 find_package(OpenGL REQUIRED)
