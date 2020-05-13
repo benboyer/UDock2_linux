@@ -100,7 +100,7 @@ void changeResolution (SDL_Window* window,scene_docking_data& docking_data, int 
   // std::cout <<"screen_resolution "<< item << std::endl;
 
                     int old_h,old_w;
-                    SDL_GetWindowSize(window,&old_h,&old_w);
+                    SDL_GetWindowSize(window,&old_w,&old_h);
                     if (h!=old_h || w != old_w){
 
                         // SDL_DestroyWindow(window);
